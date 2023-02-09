@@ -43,7 +43,7 @@ sudo apt -y upgrade
 sudo apt -y install python3-pip
 sudo pip install pyserial
 sudo apt -y install tmux
-sudo wget -O seriallog.sh https://github.com/brotherchris/PrusaSerialLog/blob/main/seriallog.sh
+sudo wget -O seriallog.sh https://github.com/brotherchris/PrusaSerialLog/raw/main/seriallog.sh
 sudo chmod 755 seriallog.sh
 if [ $var = "1" ] ; then
    sed -i 's/SERIALDEV=""/SERIALDEV="\/dev\/ttyACM0"/g' seriallog.sh
